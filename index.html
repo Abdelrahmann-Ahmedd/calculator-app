@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header-one">
+      <div class="calcContent">
+        <div class="head">
+          <h1>Calculator</h1>
+          <div class="theme">
+            <h2>Theme</h2>
+            <div class="switch">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        <input type="text" inputmode="numeric" class="screen" />
+        <aside>
+          <div class="one">
+            <div onclick="display('7')">7</div>
+            <div onclick="display('8')">8</div>
+            <div onclick="display('9')">9</div>
+            <div class="def" onclick="del()">DEL</div>
+            <div onclick="display('4')">4</div>
+            <div onclick="display('5')">5</div>
+            <div onclick="display('6')">6</div>
+            <div onclick="display('+')">+</div>
+            <div onclick="display('1')">1</div>
+            <div onclick="display('2')">2</div>
+            <div onclick="display('3')">3</div>
+            <div onclick="display('-')">-</div>
+            <div onclick="display('.')">.</div>
+            <div onclick="display('0')">0</div>
+            <div onclick="display('/')">/</div>
+            <div onclick="display('*')">x</div>
+          </div>
+          <div class="two">
+            <div class="deff" onclick="clearScreen()">RESET</div>
+            <div onclick="solution()">=</div>
+          </div>
+        </aside>
+      </div>
+    </header>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
